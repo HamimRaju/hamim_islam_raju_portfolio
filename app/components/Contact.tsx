@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import type { ChangeEvent, FormEvent, MouseEvent, ReactNode } from "react";
 import {
   ArrowUp,
@@ -18,7 +18,7 @@ import {
    ========================================================================== */
 
 const contact = {
-  email: "rajumcsk@gmail.com",
+  email: "sheikhhamim@gmail.com",
   location: "Dhaka, Bangladesh",
 };
 
@@ -428,6 +428,9 @@ function ContactForm() {
    8. FOOTER
    ========================================================================== */
 
+// The year never changes while the page is open, so there is nothing to subscribe to
+const subscribeNoop = () => () => {};
+
 // Quick links shown in the footer
 const footerLinks = [
   ["Home", "#home"],
@@ -446,6 +449,14 @@ const cutShape = {
 
 function Footer() {
   const { ref, visible } = useInView<HTMLElement>(0.1);
+
+  // Current year: the server renders 2026, the browser then shows the real
+  // year. No setState inside an effect, and no hydration mismatch.
+  const year = useSyncExternalStore(
+    subscribeNoop,
+    () => new Date().getFullYear(),
+    () => 2026
+  );
 
   return (
     <footer
@@ -588,7 +599,7 @@ function Footer() {
         {/* ---------- Bottom bar ---------- */}
         <div className="mt-12 flex flex-col items-center justify-between gap-5 border-t border-slate-800/80 pt-7 sm:flex-row">
           <p className="text-center text-sm text-slate-500 sm:text-left">
-            © {new Date().getFullYear()} Sheikh Hamim Islam Raju. Built with{" "}
+            © {year} Sheikh Hamim Islam Raju. Built with{" "}
             <span className="font-medium text-emerald-400">Next.js</span> &amp;{" "}
             <span className="font-medium text-cyan-400">Tailwind CSS</span>.
           </p>
