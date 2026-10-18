@@ -18,8 +18,8 @@ import {
    ========================================================================== */
 
 const contact = {
-  email: "sheikhhamim@gmail.com",
-  location: "Dhaka, Bangladesh",
+  email: "rajumcsk@gmail.com",
+  location: "Badda, Dhaka, Bangladesh",
 };
 
 const MESSAGE_LIMIT = 500;

@@ -378,8 +378,9 @@ const ORBIT_RADIUS = 44;
 // Heading, name and biography text
 const heading = "Engineering Digital Experiences";
 const fullName = "Sheikh Hamim Islam Raju";
-const biography =
-  "I build scalable, modern applications with a strong focus on clean architecture, delightful UX, and performance. My toolkit spans React, Next.js, Node.js, and RESTful APIs — bringing ideas to life from concept to production with robust services and smooth interfaces.";
+const biography =`I build scalable, modern applications with a strong focus on clean architecture, delightful UX, 
+and performance. My toolkit spans React, Next.js, Node.js, and RESTful APIs — bringing ideas to life from concept to production with robust services 
+and seamless user experiences.`;
 
 // The three stats under the biography.
 // `from` = how each one animates in (see the list of styles above).
@@ -784,7 +785,7 @@ function Biography() {
       {/* Title with blinking cursor: skews in from the right */}
       <Reveal from="skewRight" distance={200} duration={1100} delay={250}>
         <p className="mb-6 font-mono text-lg font-bold tracking-wide text-white sm:text-xl">
-          Software Developer <span className="animate-pulse text-cyan-400">|</span>
+          CSE Undergraduate at BRAC University | Full-Stack Developer<span className="animate-pulse text-cyan-400">|</span>
         </p>
       </Reveal>
 
