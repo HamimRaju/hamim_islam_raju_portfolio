@@ -209,31 +209,7 @@ function EmailCard() {
   );
 }
 
-function SocialLinks() {
-  return (
-    <div className="rounded-2xl border border-slate-700/50 bg-[#0a1220]/90 p-4 backdrop-blur-md sm:p-5">
-      <p className="mb-4 text-xs text-slate-400 sm:text-sm">Find me online</p>
 
-      <div className="flex flex-wrap gap-3">
-        {socials.map(({ label, href, icon }) => (
-          <a
-            key={label}
-            href={href}
-            target="_blank"
-            rel="noreferrer"
-            aria-label={label}
-            className="group inline-flex items-center gap-2.5 rounded-xl border border-slate-700/60 bg-slate-900/80 px-4 py-2.5 text-sm font-semibold text-slate-300 transition-all duration-300 hover:-translate-y-1 hover:border-emerald-400/50 hover:text-emerald-400 hover:shadow-[0_10px_30px_rgba(0,214,160,0.15)]"
-          >
-            <span className="transition-transform duration-300 group-hover:scale-110">
-              {icon}
-            </span>
-            {label}
-          </a>
-        ))}
-      </div>
-    </div>
-  );
-}
 
 /* ==========================================================================
    6. FORM FIELD  (icon + label + input, glows on focus)
@@ -607,7 +583,7 @@ function Footer() {
           {/* Back to top: angular neon button */}
           <a
             href="#home"
-            className="group inline-flex items-center gap-2 bg-gradient-to-r from-emerald-400 to-cyan-400 px-6 py-3 text-sm font-bold text-slate-950 transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
+            className="group inline-flex items-center gap-2 bg-linear-to-r from-emerald-400 to-cyan-400 px-6 py-3 text-sm font-bold text-slate-950 transition-all duration-300 hover:-translate-y-1 hover:brightness-110"
             style={cutShape}
           >
             Back to top
@@ -667,7 +643,7 @@ function ContactSection() {
               {contact.location}
             </InfoCard>
 
-            <SocialLinks />
+            
           </div>
 
           {/* Right: form */}
