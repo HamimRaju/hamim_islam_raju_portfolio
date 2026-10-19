@@ -46,7 +46,7 @@ const projects: Project[] = [
     id: 2,
     title: "Muscle Maker FITLOG",
     description:
-      "Real-time fitness tracking dashboard featuring custom workout logs, live progress monitoring, and dynamic nutrition insights for an optimal gym experience.",
+      "Fitness tracking dashboard featuring custom workout logs, progress monitoring, and dynamic exercise insights for an optimal gym experience.",
     category: "Full-Stack",
     technologies: ["Next.js", "Typescript", "Tailwind CSS"],
     image:
