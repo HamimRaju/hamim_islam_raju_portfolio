@@ -31,29 +31,28 @@ const filters: Category[] = ["All", "Full-Stack", "Frontend"];
 const INITIAL_COUNT = 3;
 
 const projects: Project[] = [
-  {
+{
     id: 1,
-    title: "Nexus Analytics Platform",
+    title: "Bazar-Dor",
     description:
-      "Real-time data visualization dashboard with user authentication, custom chart builders, and automated report generators.",
+     "Real-time market price tracker with secure login, live vegetable rate updates, and instant price comparisons.",
     category: "Full-Stack",
-    technologies: ["Next.js", "Tailwind", "Prisma"],
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=85",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/",
+    technologies: ["Next.js", "Tailwind", "MongoDB"],
+    image: "/Bazar-Dor.png",
+    liveUrl: "https://ph-b14-a07.vercel.app",
+    githubUrl: "https://github.com/HamimRaju/Bazar-Dor",
   },
   {
     id: 2,
-    title: "Aura AI Content Studio",
+    title: "Muscle Maker FITLOG",
     description:
-      "Generative AI assistant app enabling content creators to generate code snippets, copy, and vector graphics smoothly.",
+      "Real-time fitness tracking dashboard featuring custom workout logs, live progress monitoring, and dynamic nutrition insights for an optimal gym experience.",
     category: "Full-Stack",
-    technologies: ["React", "Node.js", "OpenAI API"],
+    technologies: ["Next.js", "Typescript", "Tailwind CSS"],
     image:
-      "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=1000&q=85",
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com/",
+      "/Muscle-Maker.png",
+    liveUrl: "https://ph-b14-a06.vercel.app",
+    githubUrl: "https://github.com/HamimRaju/Muscle-Maker",
     featured: true,
   },
   {
