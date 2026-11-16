@@ -764,9 +764,7 @@ function Hero() {
 
                         <a
                             href="/resume.pdf"
-                            download
-                            target="_blank"
-                            rel="noreferrer"
+                            download="Sheikh-Hamim-Islam-Raju-Resume.pdf"
                             className="group inline-flex min-h-[50px] flex-1 items-center justify-center gap-2 whitespace-nowrap rounded-full bg-white px-4 text-sm font-bold text-slate-900 transition duration-300 hover:-translate-y-1 hover:bg-emerald-50 hover:shadow-[0_8px_30px_rgba(255,255,255,0.18)] sm:min-h-[58px] sm:flex-none sm:px-8 sm:text-base"
                         >
                             My Resume
